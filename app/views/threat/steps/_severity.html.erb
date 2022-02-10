@@ -1,8 +1,13 @@
 <p>Remember, a minimum of two characters are needed.</p>
 <%= form_with( scope: :threat, url: "progress", local: true) do |form| %>
   <p>
-    <%= form.label :name %><br>
-    <%= form.text_field :name %>
+    <%= form.label :severity %><br>
+    <%= form.label :severity, "Low", :value => "Low"  %>
+    <%= form.radio_button :input, "Low" %></br>
+    <%= form.label :severity, "Medium", :value => "Medium" %>
+    <%= form.radio_button :input, "Medium" %></br>
+    <%= form.label :severity, "High", :value => "High"  %>
+    <%= form.radio_button :input, "High" %></br
   </p>
   <p>
     <%= form.submit "next"%>

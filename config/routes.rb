@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get 'threats', to: 'threat#show'
   # This is part of the logging process.
   post 'progress', to: 'threat#progress'
+  # This allows users to restart their submissions.
+  get 'reset', to: 'threat#reset'
   # First, the index page, which is where the user will arrive by default (by visiting "http://localhost:3000/")
   get 'home/index', to: 'home#index'
   root to: 'home#index'
