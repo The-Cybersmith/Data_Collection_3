@@ -1,0 +1,11 @@
+<p>Remember, a minimum of two characters are needed.</p>
+<%= form_with( scope: :threat, url: "progress", local: true) do |form| %>
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+  <p>
+    <%= form.submit "next"%>
+  </p>
+<% end %>
+

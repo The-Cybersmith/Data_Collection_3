@@ -1,2 +1,10 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<%= render "components/header" %>
+
+<p><h2>Welcome to the Homepage of the data entry web application, version 3.</h2></p>
+
+<%= link_to "submit a new threat report", report_path %><br/>
+<%= link_to "See all existing threat reports", threats_path %>
+
+<%= render "components/footer" %>
+
+

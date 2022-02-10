@@ -6,5 +6,11 @@ module Globals
       Medium
       High
     ].freeze
+    Steps = %w[
+      name
+      contact
+      severity
+      review
+    ].freeze
   end
 end

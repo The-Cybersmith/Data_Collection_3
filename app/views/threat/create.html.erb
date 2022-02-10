@@ -1,2 +1,7 @@
-<h1>Threat#create</h1>
-<p>Find me in app/views/threat/create.html.erb</p>
+<%= render "components/header" %>
+
+<p><h2>Submission Process.</h2></p>
+
+<%= render "threat/steps/#{@step}" %>
+
+<%= render "components/footer" %>
